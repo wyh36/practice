@@ -5,4 +5,19 @@ sky:
     port: 3306
     database: sky_take_out
     username: root
-    password: root
+    password: 1234
+  redis:
+    host:localhost
+    port:6379
+    database:0
+  wechat:
+    appid: wxf57a4c6d509dd469 #小程序生成的唯一标识appid
+    secret: 20e89927ba39a9cb945a5ca953734cd3 #小程序生成的秘钥
+    mchid : 1561414331 #传智播客申请的商户号
+    mchSerialNo: 4B3B3DC35414AD50B1B755BAF8DE9CC7CF407606 #证书的序列号
+    privateKeyFilePath: D:\apiclient_key.pem #私钥文件（不是企业 没有）
+    apiV3Key: CZBK51236435wxpay435434323FFDuv3 #解密的秘钥（商户平台设置 一般公司提供好不用自己手动配置）
+    weChatPayCertFilePath: D:\wechatpay_166D96F876F45C7D07CE98952A96EC980368ACFC.pem #平台证书文件
+    notifyUrl: https://www.weixin.qq.com/wxpay/pay.php #支付成功的回调（域名地址+controller的访问路径）
+    refundNotifyUrl: https://www.weixin.qq.com/wxpay/pay.php #退款成功的回调
+    # 使用内网穿透工具每次获取到的临时域名都不一样，注意替换为自己最新的临时域名
